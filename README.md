@@ -25,7 +25,7 @@
 [![vite](https://img.shields.io/badge/vitest-1.6.0-yellow)](https://vitest.dev/)
 [![react](https://img.shields.io/badge/reactjs-v18.3.1-blue)](https://react.dev/)
 [![typescript](https://img.shields.io/badge/typescript-v5.2.2-blue)](https://www.typescriptlang.org/)
-[![coverage](https://gitlab.com/geo-spatial-application/wma_ui/badges/solve_issue_3/coverage.svg)](https://geo-spatial-application.gitlab.io/-/wma_ui/-/jobs/7052007244/artifacts/coverage/index.html)
+[![codecov](https://codecov.io/gh/arashmad/web-map-ui/graph/badge.svg?token=jbGADp8zyv)](https://codecov.io/gh/arashmad/web-map-ui)
 
 </div>
 
