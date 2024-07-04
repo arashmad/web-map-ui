@@ -1,0 +1,32 @@
+Layers:
+    group <Base Maps>
+        XYZ
+            interactions:
+                switch
+    
+    group <Uploaded>
+        Raster
+            interaction:
+                on/off
+                transparency
+        Vector
+            interaction:
+                on/off
+            properties:
+                has symbol
+    
+    group <Results>
+        Raster
+            interaction:
+                on/off
+                transparency
+            properties:
+                has symbol
+    
+    group <Utils>
+        vector
+            interaction:
+                on/off
+            properties:
+                has symbol
+        

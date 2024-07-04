@@ -1,0 +1,27 @@
+{
+    "bookmark": {
+        "center": [
+            52.3934839,
+            13.0635935
+        ],
+        "zoom": 13,
+        "defLayerIndex": 0
+    },
+    "baseLayers": [
+        {
+            "key": "osm",
+            "label": "Open Street Map",
+            "url": ""
+        },
+        {
+            "key": "esri-sat",
+            "label": "Satellite",
+            "url": ""
+        },
+        {
+            "key": "esri-topo",
+            "label": "Topography",
+            "url": ""
+        }
+    ]
+}

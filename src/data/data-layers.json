@@ -1,0 +1,43 @@
+{
+    "groups": [
+        {
+            "id": "base-map",
+            "label": "Base Map",
+            "index": 1,
+            "layers": [
+                {
+                    "type": "osm",
+                    "id": "osm",
+                    "label": "Open Street Map",
+                    "index": 1002,
+                    "visible": true
+                },
+                {
+                    "type": "esri-sat",
+                    "id": "esri-sat",
+                    "label": "Esri Satellite",
+                    "index": 1001,
+                    "visible": false
+                }
+            ]
+        },
+        {
+            "id": "results",
+            "label": "Results",
+            "index": 2,
+            "layers": []
+        },
+        {
+            "id": "user-utils",
+            "label": "User Utils",
+            "index": 3,
+            "layers": []
+        },
+        {
+            "id": "user-data",
+            "label": "User Data",
+            "index": 4,
+            "layers": []
+        }
+    ]
+}
