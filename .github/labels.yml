@@ -1,0 +1,51 @@
+- name: bug
+  description: Something isn't working
+  color: 'd73a4a'
+
+- name: deployment
+  description: ''
+  color: 'd4c5f9'
+
+- name: documentation
+  description: Improvements or additions to documentation
+  color: '0075ca'
+
+- name: duplicate
+  description: This issue or pull request already exists
+  color: 'cfd3d7'
+
+- name: high priority
+  description: task which has high priority
+  color: 'dd7656'
+
+- name: improvement
+  description: ''
+  color: '286227'
+
+- name: invalid
+  description: This doesn't seem right
+  color: 'e4e669'
+
+- name: low priority
+  description: task which has low priority
+  color: 'cfe29d'
+
+- name: medium priority
+  description: task which has medium priority
+  color: 'f9b112'
+
+- name: new feature
+  description: New feature or request
+  color: 'a2eeef'
+
+- name: question
+  description: Further information is requested
+  color: 'd876e3'
+
+- name: test and coverage
+  description: ''
+  color: 'c5a416'
+
+- name: wontfix
+  description: This will not be worked on
+  color: 'ffffff'
