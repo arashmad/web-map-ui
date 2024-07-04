@@ -1,0 +1,22 @@
+name: Test and Coverage Report
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking the Repo
+        uses: actions/checkout@v4
+      - name: Install Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Node Packages
+        run: yarn install
+      - name: Unit Test
+        run: yarn test
+      - name: Upload Coverage Report
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN}}
