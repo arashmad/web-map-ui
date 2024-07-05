@@ -14,6 +14,8 @@ jobs:
           node-version: 20
       - name: Install Node Packages
         run: yarn install
+      - name: Lint test
+        run: yarn lint
       - name: Unit Test
         run: yarn test
       - name: Upload Coverage Report
