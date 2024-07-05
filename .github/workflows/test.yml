@@ -28,8 +28,7 @@ jobs:
       - name: Build Website
         run: yarn build
       - name: Specify Version
-        run: |
-          echo $VERSION > dist/version.html
+        run: echo $VERSION > dist/version.html
       - name: Test the Built Website
         run: |
           yarn global add serve
