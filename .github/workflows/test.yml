@@ -30,10 +30,9 @@ jobs:
       - name: Specify Version
         run: |
           echo $VERSION > dist/version.html
-      - name: Test Built Website
+      - name: Test the Built Website
         run: |
           yarn global add serve
-          apk add curl
           serve -s dist &
           sleep 10
           curl http://localhost:3000 | grep "Web Map Application"
