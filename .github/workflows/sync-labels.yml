@@ -8,12 +8,12 @@ on:
 
 jobs:
   sync:
-    name: Run EndBug/label-sync
+    name: Syncing Labels
     runs-on: ubuntu-20.04
     steps:
       - name: Checking the Repo
         uses: actions/checkout@v4
-      - name: Sync Labels
+      - name: Synchronizing
         uses: EndBug/label-sync@v2
         with:
           config-file: .github/labels.yml
