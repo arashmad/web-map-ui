@@ -14,11 +14,22 @@ jobs:
           node-version: 20
       - name: Install Node Packages
         run: yarn install
-      - name: Lint test
+      - name: Test for Lint
         run: yarn lint
-      - name: Unit Test
+      - name: Test for Application
         run: yarn test
       - name: Upload Coverage Report
         uses: codecov/codecov-action@v4.0.1
         with:
           token: ${{ secrets.CODECOV_TOKEN}}
+      - name: Build Website
+        uses: yarn build
+        run: |
+          echo $APP_VERSION > dist/version.html
+      - name: Test Built Website
+        run: |
+          yarn global add serve
+          apk add curl
+          serve -s dist &
+          sleep 10
+          curl http://localhost:3000 | grep "Web Map Application"
