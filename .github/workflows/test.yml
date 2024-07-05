@@ -2,6 +2,9 @@ name: Test and Coverage Report
 
 on: [push, pull_request]
 
+env:
+  VERSION: 1.0.0
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -24,8 +27,9 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN}}
       - name: Build Website
         uses: yarn build
+      - name: Specify Version
         run: |
-          echo $APP_VERSION > dist/version.html
+          echo $VERSION > dist/version.html
       - name: Test Built Website
         run: |
           yarn global add serve
