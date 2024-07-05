@@ -38,3 +38,5 @@
         <img width="600" src="./src/img/demo/web_map_application_login.png" alt="login">
     </p>
 </div>
+
+[Online Version](http://data-dashboard-stage.s3-website-us-east-1.amazonaws.com/) in stage (development).
